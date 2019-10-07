@@ -3,7 +3,6 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = props => {
-    console.log (props.online);
     return(
         <div className="Contact">
             <img className="avatar" src={props.avatar} alt="{props.name} Avatar" />
