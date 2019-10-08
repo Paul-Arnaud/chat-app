@@ -31,9 +31,9 @@ const contacts =  [
 
 const ContactList = () => (
     <div> 
-       {contacts.map(item => (
-       <div className="Contact">    
-        <img className="avatar" src={item.avatar} alt="{props.name} Avatar" />
+       {contacts.map((item, contact)  => (
+       <div className="Contact" key={contact}>    
+        <img className="avatar" src={item.avatar} alt="{props.name} Avatar"  />
          <div>
            <h4 className="name">{item.name}</h4>  
            <span className="status">
